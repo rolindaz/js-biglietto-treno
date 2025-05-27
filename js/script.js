@@ -18,13 +18,13 @@ TIP: per controllare che la vostra logica sui prezzi funzioni correttamente, pro
 
 const userKm = Number(prompt('Quanti km vuoi percorrere?')), userAge = Number(prompt('Quanti anni hai?'));
 
-console.log(userKm, userAge);
+console.log(`I km che vuoi percorrere: ${userKm} - La tua età: ${userAge}`);
 
 // - il prezzo del biglietto è definito in base ai km (0.21 € al km)
 
 let basePrice = userKm * 0.21;
 
-console.log(`Prezzo base: ${basePrice.toFixed(2)}`);
+console.log(`Prezzo base biglietto: ${basePrice.toFixed(2)} €`);
 
 // - va applicato uno sconto del 20% per i minorenni
 
